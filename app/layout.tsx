@@ -28,9 +28,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
+    <html lang="fr" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body
-        className="font-sans bg-background text-foreground antialiased"
+        className="min-h-screen font-sans bg-background text-foreground antialiased"
       >
       <SmoothScroll>
         {children}

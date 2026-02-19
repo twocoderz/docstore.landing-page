@@ -1,15 +1,15 @@
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-[linear-gradient(140deg,_#0b2b7a_0%,_#0a2a9a_40%,_#0d1f66_100%)] text-white">
+    <footer className="relative overflow-hidden bg-footer-gradient text-white">
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-32 top-16 h-56 w-56 rounded-full bg-blue-600/30 blur-[8px]" />
-        <div className="absolute right-10 top-10 h-64 w-64 rounded-full bg-blue-400/20 blur-[4px]" />
+        <div className="absolute -left-32 top-16 h-56 w-56 rounded-full bg-blue-600/30 blur-sm" />
+        <div className="absolute right-10 top-10 h-64 w-64 rounded-full bg-blue-400/20 blur-xs" />
         <div className="absolute right-0 top-0 h-48 w-48 rounded-b-[120px] bg-blue-700/40" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-6 pb-14 pt-16 lg:px-8">
         {/* CTA Card */}
-        <div className="mx-auto max-w-4xl rounded-[32px] bg-[linear-gradient(160deg,_#2954ff_0%,_#1738c9_45%,_#0b2b7a_100%)] px-8 py-12 text-center shadow-[0_40px_90px_rgba(8,23,68,0.35)]">
+        <div className="mx-auto max-w-4xl rounded-32 bg-cta-gradient px-8 py-12 text-center shadow-cta">
           <p className="text-sm font-semibold text-blue-100">Gagnez du temps</p>
           <h2 className="mt-2 text-3xl font-display font-semibold text-white sm:text-4xl">
             Téléchargez DocStore

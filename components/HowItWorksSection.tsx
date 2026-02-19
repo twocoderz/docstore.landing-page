@@ -88,12 +88,12 @@ export default function HowItWorksSection() {
           {/* Visual */}
           <div className="relative flex justify-center lg:justify-start">
             <div className="relative w-full max-w-md">
-              <div className="rounded-[36px] border border-border bg-card p-6 shadow-[0_30px_80px_rgba(15,23,42,0.12)]">
+              <div className="rounded-36 border border-border bg-card p-6 shadow-surface">
                 <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground">
                   <span>CARD DETAILS</span>
                   <span>09:41</span>
                 </div>
-                <div className="mt-5 rounded-3xl bg-[linear-gradient(140deg,_#2a5bff_0%,_#163aa1_50%,_#0b1f57_100%)] p-5 text-white shadow-[0_20px_30px_rgba(15,23,42,0.2)]">
+                <div className="mt-5 rounded-3xl bg-phone-gradient p-5 text-white shadow-panel">
                   <p className="text-xs uppercase text-white/70">Card number</p>
                   <p className="mt-2 text-sm tracking-[0.3em]">4890 9041 0021 8321</p>
                   <div className="mt-4 flex items-center justify-between text-xs text-white/70">
@@ -122,7 +122,7 @@ export default function HowItWorksSection() {
                 </div>
               </div>
 
-              <div className="absolute -left-10 bottom-6 hidden rounded-2xl bg-white p-3 shadow-[0_20px_40px_rgba(15,23,42,0.12)] md:block">
+              <div className="absolute -left-10 bottom-6 hidden rounded-2xl bg-white p-3 shadow-card-sm md:block">
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-10 rounded-full bg-primary/20" />
                   <div>

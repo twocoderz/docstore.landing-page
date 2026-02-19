@@ -4,11 +4,11 @@ export default function HomeSection() {
   return (
     <section id="home" className="relative overflow-hidden bg-background">
       {/* Background glow + arcs */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-40 -top-40 h-[420px] w-[420px] rounded-full bg-[radial-gradient(circle,_rgba(35,79,235,0.18)_0%,_rgba(35,79,235,0)_70%)]" />
-        <div className="absolute -right-32 top-10 h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle,_rgba(34,197,94,0.14)_0%,_rgba(34,197,94,0)_70%)]" />
+        <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -left-40 -top-40 h-105 w-105 rounded-full bg-hero-primary-glow" />
+        <div className="absolute -right-32 top-10 h-130 w-130 rounded-full bg-hero-accent-glow" />
         <svg
-          className="absolute right-0 top-0 h-[420px] w-[620px] opacity-40"
+          className="absolute right-0 top-0 h-105 w-155 opacity-40"
           viewBox="0 0 620 420"
           fill="none"
         >
@@ -76,11 +76,11 @@ export default function HomeSection() {
 
           {/* Right: device mock */}
           <div className="relative flex items-center justify-center">
-            <div className="absolute -right-6 -top-6 h-16 w-16 rounded-[28px] bg-accent/40 blur-[2px]" />
+            <div className="absolute -right-6 -top-6 h-16 w-16 rounded-28 bg-accent/40 blur-[2px]" />
             <div className="absolute -left-10 bottom-6 h-12 w-12 rounded-full bg-primary/30" />
 
-            <div className="relative w-[260px] rounded-[36px] border border-border bg-foreground p-3 shadow-[0_30px_80px_rgba(15,23,42,0.25)] sm:w-[300px]">
-              <div className="relative h-[540px] w-full overflow-hidden rounded-[30px] bg-[linear-gradient(160deg,_#2a5bff_0%,_#0b2b7a_50%,_#081b46_100%)]">
+            <div className="relative w-65 rounded-36 border border-border bg-foreground p-3 shadow-hero-card sm:w-75">
+              <div className="relative h-135 w-full overflow-hidden rounded-30 bg-phone-gradient">
                 <div className="absolute left-1/2 top-4 h-5 w-24 -translate-x-1/2 rounded-full bg-black/40" />
                 <div className="absolute left-5 top-14 text-xs font-semibold text-white/70">
                   Total documents
@@ -104,7 +104,7 @@ export default function HomeSection() {
                   </div>
                 </div>
 
-                <div className="absolute bottom-0 left-0 right-0 h-44 rounded-t-[26px] bg-white/95 px-5 py-4 text-slate-800">
+                <div className="absolute bottom-0 left-0 right-0 h-44 rounded-t-26 bg-white/95 px-5 py-4 text-slate-800">
                   <p className="text-xs font-semibold text-slate-500">
                     Aperçu des activités
                   </p>
@@ -129,7 +129,7 @@ export default function HomeSection() {
         </div>
 
         {/* Trusted by */}
-        <div className="mt-16 rounded-3xl border border-border bg-card/80 px-6 py-8 shadow-[0_20px_50px_rgba(15,23,42,0.08)]">
+        <div className="mt-16 rounded-3xl border border-border bg-card/80 px-6 py-8 shadow-soft-lg">
           <p className="text-center text-sm font-semibold text-muted-foreground">
             Trusted by
           </p>

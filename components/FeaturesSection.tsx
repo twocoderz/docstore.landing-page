@@ -33,7 +33,7 @@ export default function FeaturesSection() {
           {features.map((feature, index) => (
             <div
               key={feature.title}
-              className="group rounded-2xl border border-border bg-card p-8 shadow-[0_16px_40px_rgba(15,23,42,0.08)] transition-transform hover:-translate-y-1"
+              className="group rounded-2xl border border-border bg-card p-8 shadow-card transition-transform hover:-translate-y-1"
             >
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
                 <span className="text-2xl font-semibold">{index + 1}</span>

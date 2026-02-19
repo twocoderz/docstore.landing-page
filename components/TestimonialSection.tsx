@@ -55,11 +55,11 @@ export default function TestimonialSection() {
 
           <div className="relative flex justify-center lg:justify-end">
             <div className="absolute -left-6 top-10 h-14 w-14 rounded-full bg-primary/10 blur-[1px]" />
-            <div className="relative h-[360px] w-[320px] overflow-hidden rounded-[32px] bg-[linear-gradient(160deg,_#dbeafe_0%,_#eff6ff_45%,_#ffffff_100%)] shadow-[0_35px_80px_rgba(15,23,42,0.18)]">
+            <div className="relative h-90 w-[320px] overflow-hidden rounded-32 bg-testimonial-card shadow-panel">
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="flex h-56 w-56 items-center justify-center rounded-full bg-[radial-gradient(circle,_rgba(15,23,42,0.08)_0%,_rgba(15,23,42,0)_70%)]" />
+                <div className="flex h-56 w-56 items-center justify-center rounded-full bg-testimonial-radial" />
               </div>
-              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white/90 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-t from-white/90 to-transparent" />
               <div className="absolute inset-0 flex flex-col items-center justify-end pb-10">
                 <div className="flex h-28 w-28 items-center justify-center rounded-full bg-primary/10 text-3xl font-semibold text-primary">
                   MT

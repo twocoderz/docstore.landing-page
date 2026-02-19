@@ -89,7 +89,7 @@ export default function AboutSection() {
             <div className="absolute -left-6 top-6 h-20 w-20 rounded-3xl bg-primary/10" />
             <div className="absolute right-12 top-8 h-12 w-12 rounded-full bg-accent/20" />
             <div className="relative w-full max-w-md">
-              <div className="rounded-[36px] border border-border bg-card p-6 shadow-[0_30px_80px_rgba(15,23,42,0.12)]">
+              <div className="rounded-36 border border-border bg-card p-6 shadow-surface">
                 <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground">
                   <span>NEW CHARGE</span>
                   <span>09:41</span>
@@ -124,7 +124,7 @@ export default function AboutSection() {
                 </div>
               </div>
 
-              <div className="absolute -right-8 bottom-16 hidden rounded-3xl bg-white p-4 shadow-[0_20px_40px_rgba(15,23,42,0.12)] md:block">
+              <div className="absolute -right-8 bottom-16 hidden rounded-3xl bg-white p-4 shadow-surface md:block">
                 <div className="h-10 w-10 rounded-full bg-primary/10" />
                 <div className="mt-3 h-2 w-24 rounded-full bg-muted" />
                 <div className="mt-2 h-2 w-16 rounded-full bg-muted/60" />
