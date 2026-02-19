@@ -1,9 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
-
-// pnpm add lucide-react
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,8 +37,15 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-primary-foreground font-display font-bold text-2xl transition-transform group-hover:scale-110">
-              📚
+            <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center transition-transform group-hover:scale-110">
+              <Image
+                src="/logo.svg"
+                alt="DocStore"
+                width={28}
+                height={28}
+                className="h-7 w-7"
+                priority
+              />
             </div>
             <span className="font-display font-semibold text-2xl text-foreground tracking-tight">
               DocStore
@@ -77,7 +83,23 @@ export default function Navbar() {
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            {isOpen ? (
+              <Image
+                src="/icons/close.svg"
+                alt="Fermer le menu"
+                width={28}
+                height={28}
+                className="h-7 w-7"
+              />
+            ) : (
+              <Image
+                src="/icons/menu.svg"
+                alt="Ouvrir le menu"
+                width={28}
+                height={28}
+                className="h-7 w-7"
+              />
+            )}
           </button>
         </div>
       </div>
