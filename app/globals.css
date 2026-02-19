@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-display);
+  --font-sans: var(--font-poppins);
+  --font-display: var(--font-poppins);
 
   /* OKLCH est un espace colorimétrique perceptuel :
     - O = "OK" (version moderne d’OKLab, plus uniforme visuellement)
@@ -14,7 +14,7 @@
     Avantage : des variations de couleur plus naturelles et cohérentes
     pour l’œil humain (utile pour thèmes, contrastes et design systems). */
 
-  --color-background: oklch(98% 0.008 78);     /* crème papier doux */
+  --color-background: oklch(100% 0 0);     /* white */
   --color-foreground: oklch(20% 0.02 240);     /* texte principal */
   --color-card: oklch(100% 0 0);
   --color-card-foreground: oklch(20% 0.02 240);

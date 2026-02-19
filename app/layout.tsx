@@ -1,20 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 
-const inter = Inter({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-poppins",
   display: "swap",
   weight: ["400", "500", "600", "700"],
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-display",
-  display: "swap",
-  weight: ["500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`${inter.variable} ${spaceGrotesk.variable}`}>
+    <html lang="fr" className={poppins.variable}>
       <body
         className="min-h-screen font-sans bg-background text-foreground antialiased"
       >

@@ -18,11 +18,11 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'Features', href: '#features' },
-    { name: 'About', href: '#about' },
-    { name: 'How it works', href: '#how-it-works' },
-    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'Accueil', href: '#' },
+    { name: 'Fonctionnalités', href: '#features' },
+    { name: 'A-propos', href: '#about' },
+    { name: 'Comment ça marche', href: '#how-it-works' },
+    { name: 'Témoignages', href: '#testimonials' },
   ];
 
   return (
@@ -37,16 +37,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" >
-            <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center transition-transform group-hover:scale-110">
               <Image
                 src="/logo.svg"
                 alt="DocStore"
                 width={28}
                 height={28}
-                className="h-7 w-7"
+                className="h-12 w-12"
                 priority
               />
-            </div>
           </Link>
 
           {/* Desktop Menu */}
