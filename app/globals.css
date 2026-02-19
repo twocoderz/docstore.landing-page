@@ -19,7 +19,7 @@
   --color-card: oklch(100% 0 0);
   --color-card-foreground: oklch(20% 0.02 240);
 
-  --color-primary: oklch(42% 0.16 238);        /* indigo profond */
+  --color-primary: #287BFF;
   --color-primary-foreground: oklch(99% 0 0);
 
   --color-accent: oklch(70% 0.18 165);         /* teal frais */

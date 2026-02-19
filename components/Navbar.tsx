@@ -42,7 +42,7 @@ export default function Navbar() {
                 alt="DocStore"
                 width={28}
                 height={28}
-                className="h-12 w-12"
+                className="h-18 w-18"
                 priority
               />
           </Link>
