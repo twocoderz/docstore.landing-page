@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,7 +32,9 @@ export default function RootLayout({
       <body
         className="font-sans bg-background text-foreground antialiased"
       >
+      <SmoothScroll>
         {children}
+      </SmoothScroll>
       </body>
     </html>
   );
