@@ -1,5 +1,6 @@
+import Image from "next/image"
+
 export default function HomeSection() {
-  const clientLogos = ['Nest', 'Lime', 'Stripe', 'Jet', 'Bolt', 'Nova'];
 
   return (
     <section id="home" className="relative overflow-hidden bg-background">
@@ -34,9 +35,6 @@ export default function HomeSection() {
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           {/* Left */}
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-              DocStore aide à
-            </p>
             <h1 className="mt-3 text-4xl font-display font-semibold leading-tight text-foreground sm:text-5xl lg:text-6xl">
               Mettre vos documents
               <span className="block text-primary"> au travail</span>
@@ -74,73 +72,19 @@ export default function HomeSection() {
             </div>
           </div>
 
-          {/* Right: device mock */}
+          {/* Right image*/}
           <div className="relative flex items-center justify-center">
-            <div className="absolute -right-6 -top-6 h-16 w-16 rounded-28 bg-accent/40 blur-[2px]" />
-            <div className="absolute -left-10 bottom-6 h-12 w-12 rounded-full bg-primary/30" />
-
-            <div className="relative w-65 rounded-36 border border-border bg-foreground p-3 shadow-hero-card sm:w-75">
-              <div className="relative h-135 w-full overflow-hidden rounded-30 bg-phone-gradient">
-                <div className="absolute left-1/2 top-4 h-5 w-24 -translate-x-1/2 rounded-full bg-black/40" />
-                <div className="absolute left-5 top-14 text-xs font-semibold text-white/70">
-                  Total documents
-                </div>
-                <div className="absolute left-5 top-20 text-3xl font-display font-semibold text-white">
-                  56,984
-                </div>
-
-                <div className="absolute left-5 right-5 top-36 grid grid-cols-3 gap-3 text-white/90">
-                  <div className="rounded-xl bg-white/10 px-3 py-2 text-center text-xs">
-                    132
-                    <div className="text-[10px] text-white/60">Dossiers</div>
-                  </div>
-                  <div className="rounded-xl bg-white/10 px-3 py-2 text-center text-xs">
-                    1,204
-                    <div className="text-[10px] text-white/60">Fichiers</div>
-                  </div>
-                  <div className="rounded-xl bg-white/10 px-3 py-2 text-center text-xs">
-                    87%
-                    <div className="text-[10px] text-white/60">Sync</div>
-                  </div>
-                </div>
-
-                <div className="absolute bottom-0 left-0 right-0 h-44 rounded-t-26 bg-white/95 px-5 py-4 text-slate-800">
-                  <p className="text-xs font-semibold text-slate-500">
-                    Aperçu des activités
-                  </p>
-                  <div className="mt-3 space-y-3">
-                    <div className="flex items-center justify-between rounded-xl bg-slate-50 px-3 py-2 text-xs">
-                      <span>Contrat_2025.pdf</span>
-                      <span className="text-primary">Partagé</span>
-                    </div>
-                    <div className="flex items-center justify-between rounded-xl bg-slate-50 px-3 py-2 text-xs">
-                      <span>Design_system.fig</span>
-                      <span className="text-accent">Modifié</span>
-                    </div>
-                    <div className="flex items-center justify-between rounded-xl bg-slate-50 px-3 py-2 text-xs">
-                      <span>Brief_marketing.docx</span>
-                      <span className="text-slate-500">Archivé</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Image
+              src="/images/screens1.svg"
+              alt="Aperçu de l'application DocStore"
+              width={520}
+              height={520}
+              className="h-auto w-full max-w-130"
+              priority
+            />
           </div>
         </div>
 
-        {/* Trusted by */}
-        <div className="mt-16 rounded-3xl border border-border bg-card/80 px-6 py-8 shadow-soft-lg">
-          <p className="text-center text-sm font-semibold text-muted-foreground">
-            Trusted by
-          </p>
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-lg font-semibold text-foreground/70">
-            {clientLogos.map((logo) => (
-              <span key={logo} className="tracking-tight">
-                {logo}
-              </span>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
