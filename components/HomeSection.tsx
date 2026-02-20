@@ -36,13 +36,12 @@ export default function HomeSection() {
           {/* Left */}
           <div>
             <h1 className="mt-3 text-4xl font-display font-semibold leading-tight text-foreground sm:text-5xl lg:text-6xl">
-              Mettre vos documents
-              <span className="block text-primary"> au travail</span>
+              <span className="block text-primary"> DocStore, </span>
+              l&apos;essentiel de ton parcours académique au même endroit.
             </h1>
             <p className="mt-4 max-w-xl text-base text-muted-foreground sm:text-lg">
-              Centralisez, partagez et sécurisez vos fichiers en un seul
-              endroit. DocStore vous aide à organiser vos dossiers, collaborer
-              en temps réel et retrouver l&apos;essentiel en un instant.
+              Explore les établissements, filières, UE, concours d&apos;entrée et documents 
+              PDF en quelques secondes — sur mobile, avec une expérience fluide et claire.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
