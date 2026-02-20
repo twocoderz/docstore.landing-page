@@ -36,12 +36,12 @@ export default function HomeSection() {
           {/* Left */}
           <div>
             <h1 className="mt-3 text-4xl font-display font-semibold leading-tight text-foreground sm:text-5xl lg:text-6xl">
-              <span className="block text-primary"> DocStore, </span>
-              l&apos;essentiel de ton parcours académique au même endroit.
+              Réussis tes examens et devoirs avec
+              <span className="block text-primary"> DocStore. </span>
             </h1>
             <p className="mt-4 max-w-xl text-base text-muted-foreground sm:text-lg">
-              Explore les établissements, filières, UE, concours d&apos;entrée et documents 
-              PDF en quelques secondes — sur mobile, avec une expérience fluide et claire.
+              Tous tes supports académiques au même endroit : cours, TD, examens, concours et documents PDF, accessibles rapidement 
+              sur mobile — même hors ligne.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
