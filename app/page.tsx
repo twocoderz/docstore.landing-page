@@ -1,10 +1,12 @@
 
-import AboutSection from "@/components/AboutSection";
-import FeaturesSection from "@/components/FeaturesSection";
 import Footer from "@/components/Footer";
 import HomeSection from "@/components/HomeSection";
-import HowItWorksSection from "@/components/HowItWorksSection";
 import Navbar from "@/components/Navbar";
+import Offline from "@/components/Offline";
+import Read from "@/components/Read";
+import Revise from "@/components/Revise";
+import Search from "@/components/Search";
+import Share from "@/components/Share"
 import TestimonialSection from "@/components/TestimonialSection";
 
 export default function Home() {
@@ -13,9 +15,11 @@ export default function Home() {
       <Navbar />
       <main>
         <HomeSection />
-        <FeaturesSection />
-        <AboutSection />
-        <HowItWorksSection />
+        <Revise/>
+        <Read/>
+        <Offline/>
+        <Search/>
+        <Share/>
         <TestimonialSection />
       </main>
       <Footer />

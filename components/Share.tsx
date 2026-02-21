@@ -69,7 +69,7 @@ const highlights = [
   },
 ];
 
-export default function AboutSection() {
+export default function Share() {
   return (
     <section id="about" className="relative overflow-hidden bg-background py-20">
       <div className="pointer-events-none absolute inset-0">
@@ -84,63 +84,19 @@ export default function AboutSection() {
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.1fr]">
-          {/* Illustration */}
+          {/* Illustration - screen image */}
           <div className="relative flex justify-center lg:justify-start">
-            <div className="absolute -left-6 top-6 h-20 w-20 rounded-3xl bg-primary/10" />
-            <div className="absolute right-12 top-8 h-12 w-12 rounded-full bg-accent/20" />
-            <div className="relative w-full max-w-md">
-              <div className="rounded-36 border border-border bg-card p-6 shadow-surface">
-                <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground">
-                  <span>NEW CHARGE</span>
-                  <span>09:41</span>
-                </div>
-                <div className="mt-6 rounded-3xl border border-border bg-background p-6">
-                  <p className="text-sm text-muted-foreground">Total</p>
-                  <p className="mt-2 text-3xl font-display font-semibold text-foreground">
-                    289,99
-                  </p>
-                  <div className="mt-6 grid grid-cols-3 gap-3 text-xs text-muted-foreground">
-                    {['1', '2', '3', '4', '5', '6', '7', '8', '9'].map(
-                      (item) => (
-                        <div
-                          key={item}
-                          className="rounded-xl border border-border bg-card px-3 py-2 text-center"
-                        >
-                          {item}
-                        </div>
-                      )
-                    )}
-                    <div className="col-span-2 rounded-xl border border-border bg-card px-3 py-2 text-center">
-                      0
-                    </div>
-                    <div className="rounded-xl border border-border bg-card px-3 py-2 text-center">
-                      ⌫
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-5 flex items-center gap-3 rounded-2xl bg-primary/10 px-4 py-3 text-sm font-semibold text-primary">
-                  0.7% par charge
-                </div>
-              </div>
-
-              <div className="absolute -right-8 bottom-16 hidden rounded-3xl bg-white p-4 shadow-surface md:block">
-                <div className="h-10 w-10 rounded-full bg-primary/10" />
-                <div className="mt-3 h-2 w-24 rounded-full bg-muted" />
-                <div className="mt-2 h-2 w-16 rounded-full bg-muted/60" />
-              </div>
-            </div>
+            
+            
           </div>
 
           {/* Content */}
           <div>
             <h2 className="text-3xl font-display font-semibold text-foreground sm:text-4xl">
-              Vos documents sont bien protégés et sécurisés
+              Partage simple avec tes camarades
             </h2>
             <p className="mt-4 text-base text-muted-foreground">
-              DocStore applique des standards élevés pour garantir la
-              confidentialité, la disponibilité et la traçabilité de vos
-              fichiers, même en mobilité.
+              Envoie un document en quelques secondes.
             </p>
 
             <div className="mt-10 space-y-6">
