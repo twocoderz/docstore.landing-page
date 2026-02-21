@@ -66,7 +66,7 @@ export default function Navbar() {
               href="https://docstore-univ.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-all shadow-md hover:shadow-lg active:scale-95"
+              className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all shadow-md hover:shadow-lg active:scale-95"
             >
               Télécharger l&apos;app
             </a>

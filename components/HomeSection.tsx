@@ -49,17 +49,23 @@ export default function HomeSection() {
                 href="https://docstore-univ.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl bg-foreground px-5 py-3 text-sm font-semibold text-background shadow-md transition-transform hover:scale-[1.02]"
+                className="transition-transform hover:scale-[1.02]"
               >
-                Télécharger pour iOS
+                <Image
+                  src="/images/google-play.svg"
+                  alt="Télécharger sur Google Play"
+                  width={160}
+                  height={48}
+                  className="h-auto w-40"
+                />
               </a>
               <a
                 href="https://docstore-univ.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl border border-border bg-card px-5 py-3 text-sm font-semibold text-foreground shadow-sm transition-transform hover:scale-[1.02]"
+                className="underline text-sm font-semibold text-primary transition-transform hover:scale-[1.02]"
               >
-                Télécharger pour Android
+                Utiliser la version web
               </a>
             </div>
 

@@ -1,18 +1,33 @@
 const features = [
   {
-    title: 'Planifier vos docs',
+    title: 'Révision centralisée',
     description:
-      'Organisez vos dossiers par projets, équipes ou clients et gardez une structure claire qui évolue avec vous.',
+      'Retrouve en un seul espace écoles, filières, UE, ressources pédagogiques et concours.',
   },
   {
-    title: 'Sécuriser vos fichiers',
+    title: 'Documents prêts à lire',
     description:
-      'Contrôles d’accès, partage maîtrisé et sauvegardes automatiques pour protéger vos documents sensibles.',
+      'Ouvre instantanément les PDF (cours, exercices, tutoriels, examens) depuis l’application.',
   },
   {
-    title: 'Collaborer en temps réel',
+    title: 'Mode hors ligne pour réviser partout',
     description:
-      'Commentaires, versions et historiques pour avancer ensemble sans perdre le fil.',
+      'Télécharge tes documents et continue de travailler sans connexion.',
+  },
+  {
+    title: 'Recherche rapide et ciblée',
+    description:
+      'Trouve vite un contenu grâce à la recherche multi-entités et à l’historique.',
+  },
+  {
+    title: 'Notifications utiles, sans bruit',
+    description:
+      'Active uniquement les alertes qui t’intéressent (nouveaux documents, écoles, filières).',
+  },
+  {
+    title: 'Partage simple avec tes camarades',
+    description:
+      'Envoie un document en quelques secondes.',
   },
 ];
 
@@ -21,11 +36,8 @@ export default function FeaturesSection() {
     <section id="features" className="bg-background py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-            Une nouvelle approche
-          </p>
           <h2 className="mt-3 text-3xl font-display font-semibold text-foreground sm:text-4xl">
-            Simplicité, sécurité et collaboration pour vos documents
+            Tout ce qu&apos;il faut pour réviser efficacement
           </h2>
         </div>
 
