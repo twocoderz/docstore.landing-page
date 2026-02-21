@@ -84,10 +84,6 @@ export default function Read() {
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.1fr]">
-          {/* Illustration (screen image) */}
-          <div className="relative flex justify-center lg:justify-start">
-            
-          </div>
 
           {/* Content */}
           <div>
@@ -115,6 +111,11 @@ export default function Read() {
                 </div>
               ))}
             </div>
+          </div>
+
+          {/* Illustration (screen image) */}
+          <div className="relative flex justify-center lg:justify-start">
+            
           </div>
         </div>
       </div>
