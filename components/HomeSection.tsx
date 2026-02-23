@@ -45,6 +45,20 @@ export default function HomeSection() {
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
+               <a
+                href="https://docstore-univ.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-[1.02]"
+              >
+                <Image
+                  src="/images/app-store.svg"
+                  alt="Télécharger sur App Store"
+                  width={160}
+                  height={48}
+                  className="h-auto w-40"
+                />
+              </a>
               <a
                 href="https://docstore-univ.vercel.app/"
                 target="_blank"

@@ -85,11 +85,6 @@ export default function Search() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.1fr]">
           {/* Illustration - screen image */}
-          <div className="relative flex justify-center lg:justify-start">
-            
-          
-          </div>
-
           {/* Content */}
           <div>
             <h2 className="text-3xl font-display font-semibold text-foreground sm:text-4xl">
@@ -116,6 +111,9 @@ export default function Search() {
                 </div>
               ))}
             </div>
+          </div>
+          <div className="relative flex justify-center lg:justify-start">
+            
           </div>
         </div>
       </div>
