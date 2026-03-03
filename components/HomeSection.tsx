@@ -98,7 +98,7 @@ export default function HomeSection() {
               alt="Aperçu de l'application DocStore"
               width={520}
               height={520}
-              className="h-auto w-full max-w-130"
+              className="h-auto w-75 max-w-full sm:w-90 lg:w-105"
               priority
             />
           </div>

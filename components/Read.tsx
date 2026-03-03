@@ -132,7 +132,7 @@ export default function Read() {
               alt="Affichage d'un doc avec DocStore"
               width={100}
               height={100}
-              className="h-auto w-full max-w-130"
+              className="h-auto w-60 max-w-full sm:w-70 lg:w-80"
               priority
             />
           </div>
