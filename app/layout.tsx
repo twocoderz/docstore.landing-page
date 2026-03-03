@@ -12,7 +12,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "DocStore - Bibliothèque numérique universitaire",
-  description: "Accédez à des milliers de documents, livres et cours en un clic.",
+  description: "Accédez à des documents, livres et cours en un clic.",
 };
 
 export default function RootLayout({
@@ -22,12 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={poppins.variable}>
-      <body
-        className="min-h-screen font-sans bg-background text-foreground antialiased"
-      >
-      <SmoothScroll>
-        {children}
-      </SmoothScroll>
+      <body className="min-h-screen font-sans bg-background text-foreground antialiased">
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );
