@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 const highlights = [
   {
-    title: 'Sécurité niveau entreprise',
+    title: "Sécurité niveau entreprise",
     description:
-      'Chiffrement, permissions granulaires et journaux d’activité pour protéger vos contenus sensibles.',
+      "Chiffrement, permissions granulaires et journaux d’activité pour protéger vos contenus sensibles.",
     icon: (
       <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
         <path
@@ -28,9 +30,9 @@ const highlights = [
     ),
   },
   {
-    title: 'Meilleurs investissements temps',
+    title: "Meilleurs investissements temps",
     description:
-      'Recherche instantanée, prévisualisations et modèles prêts à l’emploi pour aller plus vite.',
+      "Recherche instantanée, prévisualisations et modèles prêts à l’emploi pour aller plus vite.",
     icon: (
       <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
         <circle cx="12" cy="12" r="9" fill="currentColor" opacity="0.18" />
@@ -53,9 +55,9 @@ const highlights = [
     ),
   },
   {
-    title: 'Sous surveillance active',
+    title: "Sous surveillance active",
     description:
-      'Alertes intelligentes, versions automatiques et accès contrôlés pour rester serein.',
+      "Alertes intelligentes, versions automatiques et accès contrôlés pour rester serein.",
     icon: (
       <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
         <path
@@ -63,7 +65,14 @@ const highlights = [
           fill="currentColor"
           opacity="0.18"
         />
-        <circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" strokeWidth="1.6" />
+        <circle
+          cx="12"
+          cy="12"
+          r="3.2"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.6"
+        />
       </svg>
     ),
   },
@@ -71,7 +80,10 @@ const highlights = [
 
 export default function Share() {
   return (
-    <section id="about" className="relative overflow-hidden bg-background py-20">
+    <section
+      id="about"
+      className="relative overflow-hidden bg-background py-20"
+    >
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-8 top-12 h-40 w-40 rounded-full border-2 border-primary/10" />
         <div className="absolute left-16 top-20 h-40 w-40 rounded-full border-2 border-accent/10" />
@@ -85,9 +97,15 @@ export default function Share() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.1fr]">
           {/* Illustration - screen image */}
-          <div className="relative flex justify-center lg:justify-start">
-            
-            
+          <div className="relative flex items-center justify-center">
+            <Image
+              src="/images/share.svg"
+              alt="Affichage d'un doc avec DocStore"
+              width={100}
+              height={100}
+              className="h-auto w-60 max-w-full sm:w-70 lg:w-80"
+              priority
+            />
           </div>
 
           {/* Content */}
