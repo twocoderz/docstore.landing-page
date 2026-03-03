@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useFadeInUp, useParallax } from "@/hooks/useAnimations";
 
 const testimonials = [
   {
@@ -29,6 +30,11 @@ const testimonials = [
 
 export default function TestimonialSection() {
   const [active, setActive] = useState(0);
+  const contentRef = useRef<HTMLDivElement | null>(null);
+  const imageRef = useRef<HTMLDivElement | null>(null);
+
+  useFadeInUp(contentRef, 0.05, 0.9, 24);
+  useParallax(imageRef, 8);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -42,7 +48,7 @@ export default function TestimonialSection() {
     <section id="testimonials" className="bg-background py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
-          <div>
+          <div ref={contentRef}>
             <h2 className="mt-3 text-3xl font-display font-semibold text-foreground sm:text-4xl">
               Ce que nos utilisateurs racontent
             </h2>
@@ -66,7 +72,10 @@ export default function TestimonialSection() {
             </button>
           </div>
 
-          <div className="relative flex justify-center lg:justify-end">
+          <div
+            ref={imageRef}
+            className="relative flex justify-center lg:justify-end"
+          >
             <Image
               src={testimonials[active].image}
               alt={`Photo de ${testimonials[active].name}`}

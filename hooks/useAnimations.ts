@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
  * Performance : Très légère, durée courte.
  */
 export function useFadeInUp(
-    ref: RefObject<HTMLElement>,
+    ref: RefObject<HTMLElement | null>,
     delay: number = 0,
     duration: number = 1,
     y: number = 60
@@ -41,7 +41,7 @@ export function useFadeInUp(
  * Utilisation : Passe le ref du parent + le sélecteur des enfants (ex: '.feature-card')
  */
 export function useStaggerFadeIn(
-    containerRef: RefObject<HTMLElement>,
+    containerRef: RefObject<HTMLElement | null>,
     childSelector: string = '.animate-item',
     staggerDelay: number = 0.1
 ) {
@@ -73,7 +73,7 @@ export function useStaggerFadeIn(
  * Amount = pourcentage de mouvement (15% = doux, 30% = plus marqué)
  */
 export function useParallax(
-    ref: RefObject<HTMLElement>,
+    ref: RefObject<HTMLElement | null>,
     amount: number = 15,
     start: string = 'top bottom',
     end: string = 'bottom top'
@@ -100,7 +100,7 @@ export function useParallax(
  * Explication : Le nombre monte progressivement au scroll. Très engageant sur landing.
  */
 export function useAnimatedCounter(
-    ref: RefObject<HTMLElement>,
+    ref: RefObject<HTMLElement | null>,
     target: number,
     duration: number = 2.5,
     prefix: string = '',
@@ -132,10 +132,10 @@ export function useAnimatedCounter(
  * Réutilisable directement dans ton Hero.
  */
 export function useHeroAnimation(
-    titleRef: RefObject<HTMLElement>,
-    subtitleRef: RefObject<HTMLElement>,
-    buttonRef: RefObject<HTMLElement>,
-    phoneRef: RefObject<HTMLElement>
+    titleRef: RefObject<HTMLElement | null>,
+    subtitleRef: RefObject<HTMLElement | null>,
+    buttonRef: RefObject<HTMLElement | null>,
+    phoneRef: RefObject<HTMLElement | null>
 ) {
     // Entree au chargement
     useGSAP(() => {

@@ -1,6 +1,17 @@
+"use client";
+
 import Image from "next/image";
+import { useRef } from "react";
+import { useHeroAnimation } from "@/hooks/useAnimations";
 
 export default function HomeSection() {
+  const titleRef = useRef<HTMLHeadingElement | null>(null);
+  const subtitleRef = useRef<HTMLParagraphElement | null>(null);
+  const buttonRef = useRef<HTMLDivElement | null>(null);
+  const phoneRef = useRef<HTMLDivElement | null>(null);
+
+  useHeroAnimation(titleRef, subtitleRef, buttonRef, phoneRef);
+
   return (
     <section id="home" className="relative overflow-hidden bg-background">
       {/* Background glow + arcs */}
@@ -34,17 +45,26 @@ export default function HomeSection() {
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           {/* Left */}
           <div>
-            <h1 className="mt-3 text-4xl font-display font-semibold leading-tight text-foreground sm:text-5xl lg:text-6xl">
+            <h1
+              ref={titleRef}
+              className="mt-3 text-4xl font-display font-semibold leading-tight text-foreground sm:text-5xl lg:text-6xl"
+            >
               Réussis tes examens et devoirs avec
               <span className="block text-primary"> DocStore. </span>
             </h1>
-            <p className="mt-4 max-w-xl text-base text-muted-foreground sm:text-lg">
+            <p
+              ref={subtitleRef}
+              className="mt-4 max-w-xl text-base text-muted-foreground sm:text-lg"
+            >
               Tous tes supports académiques au même endroit : cours, TD,
               examens, concours et documents PDF, accessibles rapidement sur
               mobile — même hors ligne.
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div
+              ref={buttonRef}
+              className="mt-8 flex flex-wrap items-center gap-4"
+            >
               <a
                 href="https://docstore-univ.vercel.app/"
                 target="_blank"
@@ -92,7 +112,10 @@ export default function HomeSection() {
           </div>
 
           {/* Right image*/}
-          <div className="relative flex items-center justify-center">
+          <div
+            ref={phoneRef}
+            className="relative flex items-center justify-center"
+          >
             <Image
               src="/images/screens1.svg"
               alt="Aperçu de l'application DocStore"

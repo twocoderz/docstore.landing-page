@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+import { useRef } from "react";
+import { useParallax, useStaggerFadeIn } from "@/hooks/useAnimations";
 
 const highlights = [
   {
@@ -79,8 +83,15 @@ const highlights = [
 ];
 
 export default function Search() {
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const imageRef = useRef<HTMLDivElement | null>(null);
+
+  useStaggerFadeIn(sectionRef, ".animate-item", 0.12);
+  useParallax(imageRef, 10);
+
   return (
     <section
+      ref={sectionRef}
       id="about"
       className="relative overflow-hidden bg-background py-20"
     >
@@ -99,17 +110,17 @@ export default function Search() {
           {/* Illustration - screen image */}
           {/* Content */}
           <div>
-            <h2 className="text-3xl font-display font-semibold text-foreground sm:text-4xl">
+            <h2 className="animate-item text-3xl font-display font-semibold text-foreground sm:text-4xl">
               Recherche rapide et ciblée
             </h2>
-            <p className="mt-4 text-base text-muted-foreground">
+            <p className="animate-item mt-4 text-base text-muted-foreground">
               Trouve vite un contenu grâce à la recherche multi-entités et à
               l&apos;historique.
             </p>
 
             <div className="mt-10 space-y-6">
               {highlights.map((item) => (
-                <div key={item.title} className="flex gap-4">
+                <div key={item.title} className="animate-item flex gap-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
                     {item.icon}
                   </div>
@@ -125,7 +136,10 @@ export default function Search() {
               ))}
             </div>
           </div>
-          <div className="relative flex items-center justify-center">
+          <div
+            ref={imageRef}
+            className="animate-item relative flex items-center justify-center"
+          >
             <Image
               src="/images/search.svg"
               alt="Recherche avec DocStore"
