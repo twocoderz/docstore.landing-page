@@ -1,11 +1,10 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export default function HomeSection() {
-
   return (
     <section id="home" className="relative overflow-hidden bg-background">
       {/* Background glow + arcs */}
-        <div className="pointer-events-none absolute inset-0">
+      <div className="pointer-events-none absolute inset-0">
         <div className="absolute -left-40 -top-40 h-105 w-105 rounded-full bg-hero-primary-glow" />
         <div className="absolute -right-32 top-10 h-130 w-130 rounded-full bg-hero-accent-glow" />
         <svg
@@ -40,12 +39,13 @@ export default function HomeSection() {
               <span className="block text-primary"> DocStore. </span>
             </h1>
             <p className="mt-4 max-w-xl text-base text-muted-foreground sm:text-lg">
-              Tous tes supports académiques au même endroit : cours, TD, examens, concours et documents PDF, accessibles rapidement 
-              sur mobile — même hors ligne.
+              Tous tes supports académiques au même endroit : cours, TD,
+              examens, concours et documents PDF, accessibles rapidement sur
+              mobile — même hors ligne.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
-               <a
+              <a
                 href="https://docstore-univ.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -103,7 +103,6 @@ export default function HomeSection() {
             />
           </div>
         </div>
-
       </div>
     </section>
   );
