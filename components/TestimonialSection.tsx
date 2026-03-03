@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const testimonials = [
   {
@@ -6,26 +9,34 @@ const testimonials = [
       "Depuis DocStore, notre équipe retrouve chaque fichier en quelques secondes. La collaboration est fluide et l’historique évite les erreurs.",
     name: "Moussa Traoré",
     role: "CEO, PageBulb",
-    image: "images/users/user1.jpg",
+    image: "/images/users/user1.jpg",
   },
   {
     quote:
       "Nous avons réduit de 40% le temps passé à chercher des documents. Les permissions granulaires nous ont vraiment aidés.",
     name: "Sarah Kouamé",
     role: "Ops Lead, KiteLab",
-    image: "images/users/user2.webp",
+    image: "/images/users/user2.jpg",
   },
   {
     quote:
       "L’interface est claire, rapide et sécurisée. DocStore est devenu notre source unique de vérité.",
     name: "Yann Ndiaye",
     role: "Head of Product, Orbis",
-    image: "images/users/user3.avif",
+    image: "/images/users/user3.jpg",
   },
 ];
 
 export default function TestimonialSection() {
-  const active = 0;
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setActive((prev) => (prev + 1) % testimonials.length);
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, []);
 
   return (
     <section id="testimonials" className="bg-background py-20">
@@ -57,8 +68,8 @@ export default function TestimonialSection() {
 
           <div className="relative flex justify-center lg:justify-end">
             <Image
-              src="/images/users/user1.jpg"
-              alt="Télécharger sur App Store"
+              src={testimonials[active].image}
+              alt={`Photo de ${testimonials[active].name}`}
               width={160}
               height={48}
               className="w-auto h-100"
