@@ -53,6 +53,20 @@ export default function SmoothScroll({
     // Synchronisation lenis avec GSAP ScrollTriger
     lenis.on("scroll", ScrollTrigger.update);
 
+    // Intercept hash anchor clicks so Lenis handles them smoothly
+    // (Next.js <Link href="#..."> resolves to a plain <a> at runtime)
+    const handleAnchorClick = (e: MouseEvent) => {
+      const anchor = (e.target as HTMLElement).closest(
+        'a[href^="#"]',
+      ) as HTMLAnchorElement | null;
+      if (!anchor) return;
+      const hash = anchor.getAttribute("href");
+      if (!hash || hash === "#") return;
+      e.preventDefault();
+      lenis.scrollTo(hash);
+    };
+    document.addEventListener("click", handleAnchorClick);
+
     function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -72,6 +86,7 @@ export default function SmoothScroll({
     });
 
     return () => {
+      document.removeEventListener("click", handleAnchorClick);
       lenis.destroy();
       ScrollTrigger.getAll().forEach((t) => t.kill());
     };

@@ -4,13 +4,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 /**
- * Mobile navbar: logo (left) + CTA button (right).
- * The button smooth-scrolls to the #download section.
- * No hamburger, no navigation links — keep it minimal for mobile.
+ * Mobile navbar: logo (left) + nav link (center) + CTA button (right).
+ * Nav link smooth-scrolls to the #testimonials section.
+ * The CTA button smooth-scrolls to the #download section.
  */
 export default function MobileNavbar() {
   const scrollToDownload = () => {
     const el = document.getElementById("download");
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToTestimonials = () => {
+    const el = document.getElementById("testimonials");
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -28,6 +33,14 @@ export default function MobileNavbar() {
             priority
           />
         </Link>
+
+        {/* Nav link — scrolls to #testimonials */}
+        <button
+          onClick={scrollToTestimonials}
+          className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+        >
+          Témoignages
+        </button>
 
         {/* CTA — scrolls to store badges */}
         <button
