@@ -79,9 +79,30 @@ export default function Footer() {
           <div>
             <p className="text-sm font-semibold">Liens rapides</p>
             <ul className="mt-4 space-y-3 text-sm text-blue-600">
-              <li>Acceuil</li>
-              <li>Fonctionnalites</li>
-              <li>Ce que disent nos utilisateurs</li>
+              <li>
+                <Link
+                  href="#home"
+                  className="hover:text-blue-800 transition-colors"
+                >
+                  Accueil
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#features"
+                  className="hover:text-blue-800 transition-colors"
+                >
+                  Fonctionnalités
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#testimonials"
+                  className="hover:text-blue-800 transition-colors"
+                >
+                  Ce que disent nos utilisateurs
+                </Link>
+              </li>
             </ul>
             <div className="mt-6 space-y-2 text-sm">
               <p>rahim100codeur@gmail.com</p>

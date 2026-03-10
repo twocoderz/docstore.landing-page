@@ -59,7 +59,10 @@ export default function MobileHero() {
   };
 
   return (
-    <section className="relative bg-background pt-20 pb-10 overflow-hidden">
+    <section
+      id="home"
+      className="relative bg-background pt-20 pb-10 overflow-hidden"
+    >
       {/* Subtle background glow */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-hero-primary-glow opacity-60" />

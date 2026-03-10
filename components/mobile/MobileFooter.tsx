@@ -77,10 +77,38 @@ export default function MobileFooter() {
         <div className="mt-8">
           <p className="text-sm font-semibold">Liens rapides</p>
           <ul className="mt-3 space-y-2 text-sm text-primary">
-            <li>Accueil</li>
-            <li>Fonctionnalités</li>
-            <li>Comment ça marche</li>
-            <li>Ce que disent nos utilisateurs</li>
+            <li>
+              <Link
+                href="#home"
+                className="hover:text-blue-800 transition-colors"
+              >
+                Accueil
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#features"
+                className="hover:text-blue-800 transition-colors"
+              >
+                Fonctionnalités
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#features"
+                className="hover:text-blue-800 transition-colors"
+              >
+                Comment ça marche
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#testimonials"
+                className="hover:text-blue-800 transition-colors"
+              >
+                Ce que disent nos utilisateurs
+              </Link>
+            </li>
           </ul>
           <div className="mt-5 space-y-1 text-sm text-muted-foreground">
             <p>rahim100codeur@gmail.com</p>

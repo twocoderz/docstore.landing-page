@@ -189,6 +189,7 @@ export default function FeaturesSection() {
 
   return (
     <section
+      id="features"
       ref={containerRef}
       className="relative h-screen overflow-hidden bg-background"
     >

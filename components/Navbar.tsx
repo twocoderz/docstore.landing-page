@@ -18,7 +18,7 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Accueil", href: "#" },
+    { name: "Accueil", href: "#home" },
     { name: "Fonctionnalités", href: "#features" },
     { name: "Témoignages", href: "#testimonials" },
   ];
