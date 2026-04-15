@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useRef } from "react";
 import { useHeroAnimation } from "@/hooks/useAnimations";
+import { Button } from "./Button";
 
 export default function HomeSection() {
   const titleRef = useRef<HTMLHeadingElement | null>(null);
@@ -11,6 +12,9 @@ export default function HomeSection() {
   const phoneRef = useRef<HTMLDivElement | null>(null);
 
   useHeroAnimation(titleRef, subtitleRef, buttonRef, phoneRef);
+  const openExternalPage = (url: string) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <section id="home" className="relative overflow-hidden bg-background">
@@ -79,14 +83,17 @@ export default function HomeSection() {
                   className="h-auto w-40"
                 />
               </a>
-              <a
-                href="https://docstore-univ.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline text-sm font-semibold text-primary transition-transform hover:scale-[1.02]"
+              <Button
+                variant="secondary"
+                size="sm"
+                onClick={() =>
+                  openExternalPage("https://docstore-univ.vercel.app/")
+                }
+                aria-label="Voir la version web"
+                className="font-semibold"
               >
-                Utiliser la version web
-              </a>
+                Version web
+              </Button>
             </div>
 
             <div className="mt-6 mb-4 flex items-center gap-4 text-sm text-muted-foreground">
