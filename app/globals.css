@@ -14,18 +14,18 @@
     Avantage : des variations de couleur plus naturelles et cohérentes
     pour l’œil humain (utile pour thèmes, contrastes et design systems). */
 
-  --color-background: oklch(100% 0 0);     /* white */
-  --color-foreground: oklch(20% 0.02 240);     /* texte principal */
+  --color-background: oklch(100% 0 0); /* white */
+  --color-foreground: oklch(20% 0.02 240); /* texte principal */
   --color-card: oklch(100% 0 0);
 
   --footer-white: #f8f9fa;
 
   --color-card-foreground: oklch(20% 0.02 240);
 
-  --color-primary: #8837E8;
+  --color-primary: #8837e8;
   --color-primary-foreground: oklch(99% 0 0);
 
-  --color-accent: oklch(70% 0.18 165);         /* teal frais */
+  --color-accent: oklch(70% 0.18 165); /* teal frais */
   --color-accent-foreground: oklch(20% 0.02 240);
 
   --color-muted: oklch(75% 0.02 240);
@@ -44,6 +44,22 @@
 }
 
 @layer utilities {
+  .text-black-80 {
+    color: rgb(0 0 0 / 0.8);
+  }
+  .border-black-80 {
+    border-color: rgb(0 0 0 / 0.8);
+  }
+  .border-black-70 {
+    border-color: rgb(0 0 0 / 0.7);
+  }
+  .gap-p2 {
+    gap: 0.5rem;
+  }
+  .gap-p0-5 {
+    gap: 0.125rem;
+  }
+
   .rounded-26 {
     border-radius: 26px;
   }
@@ -213,7 +229,7 @@
   height: 100%;
   border-style: solid;
   /* Spinner Color */
-  border-color: #234FEB #234FEB rgba(0, 0, 0, 0.1);
+  border-color: #234feb #234feb rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   border-width: 6px;
 }

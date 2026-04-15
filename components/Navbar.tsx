@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/Button";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,10 @@ export default function Navbar() {
     { name: "Fonctionnalités", href: "#features" },
     { name: "Témoignages", href: "#testimonials" },
   ];
+
+  const openExternalPage = (url: string) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <nav
@@ -58,15 +63,29 @@ export default function Navbar() {
           </div>
 
           {/* CTA Buttons - Desktop */}
-          <div className="hidden lg:block">
-            <a
-              href="https://docstore-univ.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-full hover:bg-primary/90 transition-all shadow-md hover:shadow-lg active:scale-95 whitespace-nowrap"
+          <div className="hidden lg:flex items-center gap-3">
+            <Button
+              variant="primary"
+              size="sm"
+              onClick={() =>
+                openExternalPage("https://docstore-univ.vercel.app/")
+              }
+              aria-label="Télécharger l'application via Play Store"
+              className="font-semibold"
             >
               Télécharger l&apos;app
-            </a>
+            </Button>
+            <Button
+              variant="secondary"
+              size="sm"
+              onClick={() =>
+                openExternalPage("https://docstore-univ.vercel.app/")
+              }
+              aria-label="Voir la version web"
+              className="font-semibold"
+            >
+              Version web
+            </Button>
           </div>
 
           {/* Hamburger - Mobile */}
