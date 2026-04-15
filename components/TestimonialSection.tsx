@@ -47,12 +47,12 @@ export default function TestimonialSection() {
   return (
     <section id="testimonials" className="bg-background py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="grid items-center gap-12 lg:grid-cols-[1fr_1fr]">
           <div ref={contentRef}>
             <h2 className="mt-3 text-3xl font-display font-semibold text-foreground sm:text-4xl">
               Ce que nos utilisateurs racontent
             </h2>
-            <p className="mt-6 text-lg text-muted-foreground">
+            <p className="mt-6 text-md max-w-xs text-muted-foreground">
               “{testimonials[active].quote}”
             </p>
             <div className="mt-6">
@@ -63,13 +63,6 @@ export default function TestimonialSection() {
                 {testimonials[active].role}
               </p>
             </div>
-
-            <button
-              type="button"
-              className="mt-8 text-sm font-semibold text-primary transition-colors hover:text-foreground"
-            >
-              More stories
-            </button>
           </div>
 
           <div
