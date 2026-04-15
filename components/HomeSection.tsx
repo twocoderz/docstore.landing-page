@@ -41,20 +41,20 @@ export default function HomeSection() {
         </svg>
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 pb-16 pt-32 lg:px-8 lg:pt-46">
+      <div className="relative mx-auto max-w-7xl px-6 pb-16 pt-32">
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           {/* Left */}
           <div>
             <h1
               ref={titleRef}
-              className="mt-3 font-display font-semibold leading-18 text-foreground sm:text-5xl lg:text-6xl"
+              className="mt-3 font-display font-semibold text-foreground text-6xl"
             >
               Réussis tes examens et devoirs avec
               <span className="block text-primary"> DocStore. </span>
             </h1>
             <p
               ref={subtitleRef}
-              className="mt-8 max-w-xl leading-12 lg:text-2xl text-muted-foreground text-lg"
+              className="mt-8 max-w-xl leading-10 text-lg lg:text-xl text-muted-foreground"
             >
               Tous tes supports académiques au même endroit : cours, TD,
               examens, concours et documents PDF, accessibles rapidement sur
