@@ -71,7 +71,7 @@ export default function Navbar() {
                 openExternalPage("https://docstore-univ.vercel.app/")
               }
               aria-label="Voir la version web"
-              className="font-semibold"
+              className="font-medium"
             >
               Version web
             </Button>
@@ -82,7 +82,7 @@ export default function Navbar() {
                 openExternalPage("https://docstore-univ.vercel.app/")
               }
               aria-label="Télécharger l'application via Play Store"
-              className="font-semibold"
+              className="font-medium"
             >
               Télécharger l&apos;app
             </Button>

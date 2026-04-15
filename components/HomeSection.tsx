@@ -51,7 +51,7 @@ export default function HomeSection() {
           <div>
             <h1
               ref={titleRef}
-              className="mt-3 font-display font-semibold text-foreground text-6xl"
+              className="mt-3 font-display leading-16 font-semibold text-foreground text-6xl"
             >
               Réussis tes examens et devoirs avec
               <span className="block text-primary"> DocStore. </span>
@@ -62,7 +62,7 @@ export default function HomeSection() {
             >
               Tous tes supports académiques au même endroit : cours, TD,
               examens, concours et documents PDF, accessibles rapidement sur
-              mobile — même hors ligne.
+              mobile — même hors ligne 😍.
             </p>
 
             <div
@@ -80,7 +80,7 @@ export default function HomeSection() {
                   alt="Télécharger sur Google Play"
                   width={160}
                   height={48}
-                  className="h-auto w-40"
+                  className="h-auto w-44"
                 />
               </a>
               <Button
@@ -90,7 +90,7 @@ export default function HomeSection() {
                   openExternalPage("https://docstore-univ.vercel.app/")
                 }
                 aria-label="Voir la version web"
-                className="font-semibold"
+                className="font-medium rounded-lg"
               >
                 Version web
               </Button>
