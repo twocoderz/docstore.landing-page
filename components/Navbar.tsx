@@ -18,7 +18,6 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Accueil", href: "#home" },
     { name: "Fonctionnalités", href: "#features" },
     { name: "Témoignages", href: "#testimonials" },
   ];
@@ -32,7 +31,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/">
             <Image
@@ -40,7 +39,7 @@ export default function Navbar() {
               alt="DocStore"
               width={28}
               height={28}
-              className="h-18 w-18"
+              className="h-14 w-14"
               priority
             />
           </Link>
