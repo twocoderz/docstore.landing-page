@@ -10,21 +10,24 @@ const testimonials = [
       "Depuis DocStore, notre équipe retrouve chaque fichier en quelques secondes. La collaboration est fluide et l’historique évite les erreurs.",
     name: "Moussa Traoré",
     role: "CEO, PageBulb",
-    image: "/images/users/user1.jpg",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=160&h=48&fit=crop&crop=faces",
   },
   {
     quote:
       "Nous avons réduit de 40% le temps passé à chercher des documents. Les permissions granulaires nous ont vraiment aidés.",
     name: "Sarah Kouamé",
     role: "Ops Lead, KiteLab",
-    image: "/images/users/user2.jpg",
+    image:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=160&h=48&fit=crop&crop=faces",
   },
   {
     quote:
       "L’interface est claire, rapide et sécurisée. DocStore est devenu notre source unique de vérité.",
     name: "Yann Ndiaye",
     role: "Head of Product, Orbis",
-    image: "/images/users/user3.jpg",
+    image:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=160&h=48&fit=crop&crop=faces",
   },
 ];
 
