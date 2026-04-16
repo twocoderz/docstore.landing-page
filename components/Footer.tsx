@@ -4,9 +4,6 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-footer-white text-black">
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute right-0 top-0 h-48 w-48 rounded-b-[120px] bg-blue-700/40" />
-      </div>
 
       <div className="relative mx-auto max-w-7xl px-6 pb-14 pt-16 lg:px-8">
         {/* CTA Card */}
