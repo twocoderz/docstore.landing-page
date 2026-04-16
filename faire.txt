@@ -1,0 +1,1 @@
+- modifier le contenu et checker le responsive (surtout en mode mobile)
