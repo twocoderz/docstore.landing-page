@@ -12,7 +12,7 @@ function StarRating({ rating }: { rating: number }) {
       {[...Array(5)].map((_, i) => (
         <span
           key={i}
-          className={i < rating ? "text-gray-400" : "text-gray-300"}
+          className={i < rating ? "text-amber-400" : "text-amber-200"}
         >
           ★
         </span>
@@ -42,8 +42,8 @@ export default function TestimonialSection() {
   return (
     <section id="testimonials" className="bg-background py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-3xl font-display max-w-xl font-semibold text-foreground sm:text-4xl">
-          Ce que nos utilisateurs racontent
+        <h2 className="text-5xl font-display max-w-lg font-semibold text-foreground">
+          Témoignages
         </h2>
 
         <div
