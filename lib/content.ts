@@ -34,7 +34,7 @@ export const testimonials = [
     name: "Moussa Traoré",
     role: "CEO, PageBulb",
     image: "/images/users/user1.jpg",
-    rating: 5,
+    rating: 4,
   },
   {
     quote:
@@ -50,7 +50,23 @@ export const testimonials = [
     name: "Yann Ndiaye",
     role: "Head of Product, Orbis",
     image: "/images/users/user3.jpg",
-    rating: 5,
+    rating: 3,
+  },
+  {
+    quote:
+      "L'interface est claire, rapide et sécurisée. DocStore est devenu notre source unique de vérité.",
+    name: "Yann Ndiaye",
+    role: "Head of Product, Orbis",
+    image: "/images/users/user3.jpg",
+    rating: 2,
+  },
+  {
+    quote:
+      "L'interface est claire, rapide et sécurisée. DocStore est devenu notre source unique de vérité.",
+    name: "Yann Ndiaye",
+    role: "Head of Product, Orbis",
+    image: "/images/users/user3.jpg",
+    rating: 4,
   },
 ] as const;
 
