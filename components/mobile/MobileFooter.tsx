@@ -9,6 +9,9 @@ import { APP_URL, WEB_URL } from "@/lib/content";
  * CTA card + minimal links + contact.
  */
 export default function MobileFooter() {
+  const GITHUB_URL = "https://github.com";
+  const WEBSITE_URL = "https://votre-site.com";
+
   return (
     <footer className="bg-footer-white text-black">
       <div className="px-5 pb-10 pt-12">
@@ -139,9 +142,45 @@ export default function MobileFooter() {
         {/* Bottom bar */}
         <div className="mt-10 border-t border-primary/10 pt-5 flex items-center justify-between text-xs text-muted-foreground">
           <p>© 2026 DocStore. Tous droits réservés.</p>
-          <span className="text-primary border border-primary/20 px-3 py-2 rounded-full text-xs font-medium">
-            Nous suivre
-          </span>
+          <div className="flex items-center gap-2">
+            <a
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="rounded-full border border-primary/20 p-2 text-primary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="h-4 w-4"
+              >
+                <path d="M12 2C6.48 2 2 6.59 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.1-1.5-1.1-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.15-4.56-5.11 0-1.13.39-2.05 1.03-2.78-.1-.26-.45-1.31.1-2.74 0 0 .84-.28 2.75 1.06A9.36 9.36 0 0 1 12 6.84c.85 0 1.7.12 2.5.35 1.9-1.34 2.74-1.06 2.74-1.06.55 1.43.2 2.48.1 2.74.64.73 1.03 1.65 1.03 2.78 0 3.97-2.34 4.85-4.57 5.1.36.33.68.98.68 1.99 0 1.44-.01 2.59-.01 2.94 0 .27.18.59.69.49A10.27 10.27 0 0 0 22 12.26C22 6.59 17.52 2 12 2Z" />
+              </svg>
+            </a>
+            <a
+              href={WEBSITE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Site web"
+              className="rounded-full border border-primary/20 p-2 text-primary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                className="h-4 w-4"
+              >
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3 12h18" />
+                <path d="M12 3a15 15 0 0 1 0 18" />
+                <path d="M12 3a15 15 0 0 0 0 18" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
